@@ -1,9 +1,9 @@
-type propsButton = {
+interface ButtonProps {
 	title: string;
 	styles?: string;
-};
+}
 
-const Button: React.FC<propsButton> = ({ title, styles = "" }) => {
+const Button: React.FC<ButtonProps> = ({ title, styles = "" }) => {
 	return <button className={`${styles}`}>{title}</button>;
 };
 
