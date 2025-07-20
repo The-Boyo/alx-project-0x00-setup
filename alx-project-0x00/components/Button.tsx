@@ -1,14 +1,9 @@
-interface ButtonProps {
-	title: string;
-	size?: "small" | "medium" | "large";
-	rounded?: "sm" | "md" | "full";
-	className?: string;
-}
+import { ButtonProps } from "@/interfaces";
 
 const Button: React.FC<ButtonProps> = ({
 	title,
-	size = "medium",
-	rounded = "md",
+	size = "small",
+	rounded = "sm",
 	className = "",
 }) => {
 	const sizeClasses = {
